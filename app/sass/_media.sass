@@ -1,0 +1,350 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1600px)
+	/**/
+	.main-screen
+		min-height: 631px
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1300px)
+	/**/
+	.item--second
+		transform: translateX(0)
+	.col-image--right
+		transform: translateX(0%)
+	.col-image--left
+		transform: translateX(0%)
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1100px)
+	/**/
+	.sign-up__content
+		width: 44.444vw
+		min-width: 60vw
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	/**/
+	.main-screen
+		background-position: center right -30vw
+	.container-fluid 
+		max-width: 95vw
+	.header__menu
+		display: none
+	.menu-btn__row
+		width: 30px
+		height: 2px 
+		margin-bottom: 5px
+		background: #fff
+		transition: all 0.3s
+	.menu-btn__row:last-child 
+		//margin-bottom: 0
+	.menu-btn.active 
+		.menu-btn__row:last-child 
+			display: none
+		.menu-btn__row:first-child 
+			transform: rotate(45deg)
+		.menu-btn__row:nth-child(2) 
+			transform: rotate(-45deg)
+			position: relative
+			margin-bottom: 0
+			top: -6px
+	.header__menu.active 
+		display: block
+		position: absolute
+		background: #fff
+		left: 0
+		top: 100%
+		padding-top: 5vw
+		padding-bottom: 5vw
+		box-shadow: 0px 5px 5px rgba($text-color, .2)
+		z-index: 9999
+	.header__menu-link
+		color: $text-color
+		margin-left: 0
+		margin-bottom: 2vw
+	.header__menu-link--btn
+		background: $text-color
+		color: #fff
+	.header__menu-left,
+	.header__menu-right
+		flex-direction: column
+	.sec-image
+		max-width: 80%
+		margin: 0 auto
+		display: block
+		transform: translateX(0%)
+	.items-row
+		.col-lg-6:first-child 
+			order: 2
+		.col-lg-6:nth-child(2)
+			order: 1
+		img 
+			margin: 0 auto
+			display: block
+			margin-top: 5vw
+			max-width: 80%
+	.item--second
+		padding-top: 0
+	.items-row
+		margin-top: 5vw
+	.blue-section
+		padding-bottom: 30vw
+	.fun-img
+		margin-top: -15vw
+	.col-image--right
+		transform: translateX(0%)
+	.col-image--left
+		transform: translateX(0%)
+	.items-row--left
+		.col-lg-6:first-child 
+			order: 1
+		.col-lg-6:nth-child(2)
+			order: 2
+	.site-bar
+		display: none
+	.sign-up
+		padding-left: 0
+		background: #F9F9F9
+	.sign-up__content
+		width: 95vw
+	.form-label--empty
+		display: none
+
+
+
+
+
+
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	/**/
+	.main-screen
+		min-height: 100vw
+		background-position: center right -45vw
+		padding-top: 13vw
+	h1 
+		font-size: 10vw
+
+	.main-screen__text
+		font-size: 4vw
+		max-width: 70vw
+		line-height: 2
+	.header
+		top: 4vw
+	.logo 
+		img 
+			width: 25vw 
+	.menu-btn__row
+		width: 9vw
+		height: 0.7vw 
+		margin-bottom: 1.5vw
+		background: #fff
+	.menu-btn
+		position: relative 
+		top: -2vw
+	.menu-btn.active 
+		.menu-btn__row:nth-child(2) 
+			top: -2vw
+	.header__menu-link
+		margin-bottom: 5vw
+		span 
+			display: none
+	.header__menu-link--btn
+		width: 90vw
+		height: 13vw
+	.header__menu-link
+		font-size: 6vw
+	.mission
+		padding-top: 10vw 
+		padding-bottom: 10vw
+		.col-md-6 
+			img
+				max-width: 80%
+
+	.mission__contant
+		padding-top: 5vw
+	h2 
+		font-size: 8vw
+	.mission__contant p
+		font-size: clamp(14px, 4vw, 4vw)
+	.sec-image
+		max-width: 100%
+		margin-top: 5vw
+	.item--first
+		padding-top: 20vw
+	.sub-title
+		font-size: clamp(14px, 4.2vw, 4.2vw)
+	.item-title
+		font-size: 7vw
+	.item p
+		font-size: clamp(14px, 4vw, 4vw)
+		margin-bottom: 4vw
+	.items-row
+		margin-top: 20vw
+	.items-row
+		img 
+			max-width: 100%
+	.partners
+		padding-top: 20vw
+	.partners-logos
+		font-size: 15vw
+		img 
+			width: 30vw
+	.partners-title
+		font-size: 8vw
+	.partners__sub-title
+		font-size: clamp(14px, 4vw, 4vw)
+		margin-bottom: 10vw
+	.items-section
+		padding-bottom: 20vw
+	.footer__menu
+		flex-direction: column
+		align-items: center
+		margin-bottom: 10vw
+		a 
+			margin: 0
+			margin-bottom: 5vw
+	.footer
+		padding-top: 15vw
+		padding-bottom: 10vw
+	.footer__bottom
+		flex-direction: column
+		padding-top: 8vw
+	.footer__copi
+		margin-top: 8vw
+		text-align: center
+		font-size: clamp(12px, 4vw, 15px)
+		order: 1
+	.sign-up__content
+		padding-top: 12.165vw
+		width: 85.645vw
+	.back-link
+		font-size: clamp(14px, 3.406vw, 16px)
+		margin-bottom: 7.786vw
+	.sign-up__top-title
+		font-size: clamp(14px, 4.380vw, 4.380vw)
+	.sign-up__title
+		font-size: 7.299vw
+	.welcom-content
+		flex-direction: column
+	.welcom-img-wrapper
+		margin-right: 0 
+		margin-bottom: 2.676vw
+		img 
+			width: 100%
+	.welcom__text
+		font-size: clamp(14px, 3.406vw, 3.406vw)
+	.welcom-item__value
+		font-size: clamp(14px, 5.255vw, 5.255vw)
+	.welcom-item
+		padding-left: 5.839vw
+		padding-right: 5.839vw
+	.welcom-item__title
+		font-size: clamp(12px, 2.920vw, 2.920vw)
+	.bars-title
+		font-size: clamp(14px, 3.465vw, 3.465vw)
+		span 
+			font-size: clamp(10.2875px, 2.504vw, 2.504vw)
+	.energy-prodact-item
+		flex-direction: column
+		align-items: flex-start
+	.energy-prodact-item__left
+		border-right: none
+	.live-item__title
+		font-size: 16px
+	.product-summary
+		padding-left: 4vw
+		padding-right: 4vw
+	.energy-prodact-item__right
+		padding-left: 0
+	.product-summary__item
+		padding-left: 2.676vw
+		padding-right: 2.676vw
+		font-size: 3.406vw
+		height: 8.273vw
+	.form-row
+		flex-direction: column
+		.form-item 
+			width: 100%
+	.form-sub-title
+		font-size: 5vw
+	.brek-form
+		input
+			width: 13.625vw
+			height: 13.625vw
+			margin-right: 3.893vw
+			font-size: 7.299vw
+
+
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	/**/
+	.button-row .submit-button
+		width: 100%
+	.button-row 
+		padding-top: 15vw
+	.step:last-child 
+		margin-bottom: 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 380px)
+	/**/
+	.blue-section
+		min-height: auto
+	.fun-img
+		margin-top: -15vw
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
+
+
+
+

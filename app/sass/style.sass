@@ -1,0 +1,653 @@
+@import "vars"
+@import "fonts"
+
+//start global style
+body 
+	font-size: 16px
+	font-family: $circular
+	font-weight: 400
+.container-fluid 
+	width: 1140px
+	max-width: 95vw
+h1 
+	font-family: $bw 
+	font-weight: 700
+	font-size: 54px
+	margin-bottom: 0
+h2 
+	font-family: $bw 
+	font-size: 40px
+	font-weight: 700
+a, 
+a:hover 
+	text-decoration: none
+.sub-title
+	font-size: 20px
+	color: #fff
+	font-family: $lato
+	font-weight: 500
+	margin-bottom: 25px
+	position: relative
+	display: flex 
+	align-items: center
+.sub-title:after 
+	content: ''
+	width: 73px 
+	height: 2px
+	background: #fff
+	display: block
+	margin-left: 15px
+.sub-title--red 
+	color: $red
+	font-family: $circular
+	font-weight: 500
+.sub-title--red:after 
+	background: $red
+.white 
+	color: #fff
+
+//end global style
+
+//start header 
+.header 
+	position: absolute 
+	top: 0 
+	left: 0 
+	width: 100%
+	top: 40px
+	color: #fff
+	.container-fluid 
+		display: flex 
+		justify-content: space-between 
+		align-items: center
+.header__menu
+	width: 100%
+	display: flex 
+	justify-content: space-between
+.header__menu-link
+	font-size: 18px
+	color: #fff
+	font-family: $bergen
+	display: block 
+	margin-left: 30px
+.header__menu-link:hover 
+	color: #fff
+.header__menu-left,
+.header__menu-right
+	display: flex 
+	align-items: center
+.header__menu-link--btn
+	background: #fff
+	color: $text-color
+	width: 161px 
+	height: 46px
+	font-size: 14px
+	display: flex
+	justify-content: center 
+	align-items: center
+	border-radius: 5px
+.header__menu-link--btn:hover 
+	color: $text-color
+
+//end header 
+
+//start main screen
+.main-screen
+	min-height: 750px
+	background: url('../img/main-bg.png')
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: center
+	color: #fff
+	display: flex 
+	align-items: center
+.main-screen__text
+	font-family: $manrope
+	font-weight: 500
+	font-size: 20px
+	max-width: 517px
+//end main screen
+
+//start mission
+.mission 
+	padding-top: 114px
+	padding-bottom: 134px
+	.container-fluid 
+		width: 1270px
+	.col-md-6
+		display: flex 
+		flex-direction: column
+		justify-content: center
+		height: auto
+		align-items: center
+		img 
+			max-width: 100%
+.mission__contant
+	max-width: 487px
+	p 
+		margin-bottom: 0
+		font-size: 24px 
+		a 
+			color: $red 
+			text-decoration: underline
+//end mission
+
+.blue-section
+	min-height: 2240px 
+	background: url('../img/bg.png')
+	background-size: cover
+	background-repeat: no-repeat
+.sec-image
+	max-width: 41.250vw
+	transform: translateX(10%)
+.item 
+	padding-top: 65px
+	p 
+		margin-bottom: 30px
+.item--first
+	padding-top: 130px
+
+.item-title
+	font-size: 40px
+	line-height: 1.2
+	color: #fff
+	font-family: $bergen
+	font-weight: 700
+	max-width: 498px
+	margin-bottom: 20px
+.col-image
+	max-width: 100%
+.items-row
+	margin-top: 154px
+.item--second
+	transform: translateX(10%)
+.partners
+	padding-top: 174px
+	color: #fff
+.partners__header
+	text-align: center
+.partners-title
+	font-size: 48px
+	font-family: $bergen
+	font-weight: 700
+.partners__sub-title
+	font-size: 18px 
+	font-weight: 400
+	font-family: $manrope
+	margin-bottom: 24px
+.partners-logos
+	width: 724px 
+	max-width: 100%
+	margin: 0 auto
+	display: flex 
+	justify-content: space-between
+	align-items: center
+	font-size: 100px 
+	font-weight: 700 
+	font-family: $bergen
+.fun-img
+	margin-top: -148px
+	img 
+		max-width: 100% 
+		display: block 
+		margin: 0 auto
+.col-image--right
+	transform: translateX(15%)
+.col-image--left
+	transform: translateX(-10%)
+.items-section
+	padding-bottom: 170px
+
+//start footer 
+.footer
+	background: #0E171F
+	color: #fff
+	padding-top: 96px 
+	padding-bottom: 91px
+.footer__logo
+	display: flex 
+	justify-content: center
+	margin-bottom: 38px
+.footer__menu
+	display: flex 
+	justify-content: center
+	margin-bottom: 70px
+	a 
+		color: #fff
+		font-family: $manrope
+		font-weight: 400
+		font-size: 17.8px
+		display: block 
+		margin: 0 14px
+.footer__bottom
+	display: flex 
+	justify-content: space-between 
+	align-items: center
+	border-top: 1px solid rgba(#fff, 0.2)
+	padding-top: 27px
+	a 
+		width: 27px 
+		height: 27px
+		border-radius: 50%
+		background: rgba(#fff, 0.1)
+		display: flex 
+		justify-content: center 
+		align-items: center
+		margin-left: 17px
+.footer__social
+	display: flex 
+	align-items: center
+.footer__copi
+	font-size: 15.5px 
+	font-family: $manrope
+	font-weight: 400
+//end footer
+
+//start site-bar
+.site-bar
+	//width: 525px 
+	width: 36.389vw
+	height: 100vh 
+	background: #0E171F
+	background-image: url('../img/site-bar.svg')
+	background-size: cover 
+	background-repeat: no-repeat
+	background-position: center
+	display: flex 
+	align-items: center
+	color: #fff
+	padding-left: 5.417vw
+	padding-right: 4.028vw
+	position: fixed 
+	top: 0 
+	left: 0
+.site-bar__content
+	border-left: 1px solid #DDE0E5
+.site-bar__item
+	padding-left: 21.5px
+	position: relative
+	padding-bottom: 2.5vh
+.site-bar__item:before 
+	content: ''
+	background: #0E171F
+	border: 1px solid #DDE0E5
+	width: 20px 
+	height: 20px
+	position: absolute 
+	top: 0 
+	left: 0
+	border-radius: 50%
+	transform: translateX(-50%)
+.site-bar__title
+	font-family: $bergen 
+	font-weight: 600 
+	font-size: 2.3vh
+	margin-bottom: 2px
+	transform: translateY(-15%)
+	color: rgba(255, 255, 255, 0.8)
+.site-bar__text
+	font-size: 1.8vh
+	color: rgba(#DDE0E5, 0.7)
+.site-bar__item:last-child
+	padding-bottom: 0
+.site-bar__item.active
+	.site-bar__title
+		color: rgba(255, 255, 255, 1)
+.site-bar__item.active:before 
+	background: #22D3D9
+	border: 1px solid #22D3D9
+	background-image: url('../img/check.svg')
+	background-position: center 
+	background-repeat: no-repeat
+//end site-bar 
+
+.sign-up
+	padding-left: 36.389vw
+	display: flex 
+	justify-content: center
+.sign-up__content
+	padding-top: 37px
+	width: 44.444vw
+	min-width: 640px
+	//background: red
+.back-link
+	display: flex
+	align-items: center
+	color: #5C6278
+	font-family: $manrope
+	font-weight: 400
+	margin-bottom: 49px
+	padding-bottom: 2px
+	border-bottom: 1px solid #5C6278
+	width: 240px
+	img 
+		display: block 
+		margin-right: 10px
+.back-link:hover 
+	color: #5C6278
+.sign-up__top-title
+	font-size: 18px
+	color: #2E384B
+.sign-up__title
+	font-size: 40px
+	color: #0E171F
+	font-weight: 700
+	max-width: 590px
+	line-height: 150%
+.welcom-content
+	width: 100%
+	background: #F9F9F9
+	border: 1px solid #DDE0E5
+	border-radius: 6px
+	padding: 15px 13px
+	display: flex
+.welcom-img-wrapper
+	margin-right: 12px
+.welcom__text
+	font-size: 13px
+	line-height: 150%
+.welcom__items
+	display: flex 
+	text-align: center
+	padding-top: 9px
+.welcom-item
+	padding-left: 18px 
+	padding-right: 18px
+.welcom-item:first-child 
+	padding-left: 0
+.welcom-item__value
+	font-family: 'Montserrat', sans-serif
+	font-weight: 700
+	font-size: 21.6185px
+	text-transform: capitalize
+	color: #0E171F
+.welcom-item__title
+	font-size: 7.5px
+	color: #5C6278
+.bars-title
+	margin-top: 10px
+	font-size: 11.1522px
+	font-weight: 700 
+	color: #000
+	font-family: $bergen
+	span 
+		font-size: 8.05435px
+		font-weight: 400
+.progres-baze
+	width: 240.391px 
+	height: 2.47826px
+
+.step
+	padding-bottom: 40px
+	border-bottom: 1px solid #DDE0E5
+	margin-bottom: 32px
+.welcom-item:nth-child(2)
+	border-left: 1px solid #DDDDDD
+	border-right: 1px solid #DDDDDD
+.step-title
+	font-size: 28px 
+	font-family: $bergen
+	font-weight: 600
+.step-sub-title
+	font-size: 14px
+	margin-bottom: 27px
+.energy-prodact-item
+	width: 100%
+	box-shadow: 0px 1px 6px rgba(51, 51, 51, 0.11)
+	border-radius: 5px
+	min-height: 131px
+	margin-bottom: 14px
+	padding: 15px 28px
+	display: flex 
+	cursor: pointer
+	align-items: center
+.energy-prodact-item__left
+	width: 180px
+	height: 100px
+	border-right: 1px solid #DDE0E5
+	display: flex
+	color: #8C96A9
+	font-family: $bergen
+	font-weight: 600
+.energy-prodact-item__circle
+	width: 20px 
+	height: 20px 
+	display: flex 
+	justify-content: center 
+	align-items: center
+	border: 1.5px solid #DDE0E5
+	border-radius: 50%
+	margin-right: 20px
+.energy-prodact-item__title
+	font-weight: 600
+	font-size: 18px
+	
+	line-height: 1.1
+.energy-product__value-wrapper
+	display: flex 
+	align-items: center
+.energy-product__value
+	font-weight: 600
+	font-size: 55px
+.energy-product__cyr
+	font-size: 18px 
+.energy-prodact-item__right
+	padding-left: 25px
+.energy-product-list-title
+	font-size: 12px 
+	font-weight: 500
+	margin-bottom: 6px
+	color: #B3C0CB
+.energy-product-list-item
+	display: flex 
+	align-items: center
+	font-size: 12px
+.energy-product-list-item:before
+	content: ''
+	width: 4px 
+	height: 4px 
+	border-radius: 50%
+	background: #0088A2	
+	margin-right: 8px
+.energy-prodact-item.active,
+.live-item.active
+	background: #F2F8FA
+	box-shadow: 0px 1px 6px rgba(51, 51, 51, 0.11)
+	.energy-prodact-item__left
+		color: #2E384B
+	.energy-prodact-item__circle
+		border: 1.5px solid
+		color: $blue
+		span 
+			width: 14px 
+			height: 14px 
+			background: $blue
+			border-radius: 50%
+.live-items
+	display: flex 
+	justify-content: space-between
+	width: 366px
+	max-width: 100%
+.live-item
+	width: 166px 
+	max-width: 49%
+	height: 155px
+	box-shadow: 0px 1px 6px rgba(51, 51, 51, 0.11)
+	border-radius: 5px
+	padding: 12px 14px
+	position: relative
+	display: flex 
+	flex-direction: column 
+	align-items: center
+	justify-content: center
+	cursor: pointer
+	.energy-prodact-item__circle
+		position: absolute
+		top: 12px 
+		left: 14px
+.icon-stroke
+	stroke: #8C96A9
+.icon-fill
+	fill: #8C96A9
+.live-item__title
+	margin-top: 28px
+	color: #8C96A9
+	font-size: 18px 
+	font-weight: 500
+.live-item.active
+	background: #F2F8FA
+	box-shadow: 0px 1px 6px rgba(51, 51, 51, 0.11)
+	.energy-prodact-item__left
+		color: #2E384B
+	.energy-prodact-item__circle
+		border: 1.5px solid
+		color: $blue
+		span 
+			width: 14px 
+			height: 14px 
+			background: $blue
+			border-radius: 50%
+	.live-item__title
+		color: $text-color
+	.icon-stroke
+		stroke: $text-color
+	.icon-fill
+		fill: $text-color
+.product-summary__empty
+	height: 151px 
+	background: #F2F8FA
+	display: flex 
+	justify-content: center 
+	align-items: center 
+	text-align: center 
+	color: #5C6278
+	font-size: 16px 
+	font-weight: 500
+	border-radius: 5px
+	span
+		max-width: 318px
+.product-summary
+	background: #F2F8FA
+	width: 100%
+	border-radius: 5px
+	padding: 31px 35px
+	display: none
+	.energy-prodact-item
+		padding: 0
+		box-shadow: none
+	.energy-prodact-item__left
+		color: $text-color
+		width: 140px
+	p 
+		font-size: 13px
+		margin-bottom: 4px
+.product-summary__title
+	font-family: $bergen 
+	font-weight: 700
+	margin-bottom: 12px
+.product-summary__list
+	margin-top: 17px
+.product-summary__item
+	background: rgba(#FFFFFF, 0.5)
+	border-radius: 4px
+	height: 34px
+	margin-bottom: 10px
+	padding-left: 20px 
+	padding-right: 36px 
+	display: flex 
+	align-items: center 
+	justify-content: space-between
+	font-size: 14px
+.form-row
+	display: flex 
+	justify-content: space-between 
+	width: 100%
+.form-item
+	width: 100%
+	margin-bottom: 28px
+	span 
+		color: $red
+.form-row
+	.form-item
+		width: 48%
+.form
+	font-size: 18px
+input[type="text"],
+input[type="email"]  
+	display: block
+	width: 100%
+	height: 50px 
+	background: #fff
+	border: 1px solid #DDE0E5
+	box-sizing: border-box
+	border-radius: 5px
+	padding: 0 22px
+	outline: none
+input::placeholder 
+	color: #DDE0E5
+input:focus::placeholder
+	color: transparent
+.checkbox-wrapper
+	display: flex
+	input 
+		width: 25px 
+		height: 25px
+		min-width: 25px
+		cursor: pointer 
+		margin-right: 12px
+	label 
+		font-size: 13px
+		color: #5C6278
+	a 
+		color: #5C6278
+		text-decoration: underline 
+		font-weight: 500
+.form-sub-title
+	color: #5C6278
+	font-size: 24px
+	font-family: $bergen
+	margin-bottom: 32px
+.form-label
+	min-height: 17px
+.form-footer
+	font-size: 13px
+.brek-title
+	color: #FCB223
+	font-size: 20px
+	font-weight: 500
+	margin-bottom: 25px
+.brek-form
+	display: flex
+	input
+		width: 62px 
+		height: 62px
+		background: #FFFFFF
+		border: 1px solid #0D324D
+		border-radius: 5px
+		font-size: 34px
+		text-align: center
+		font-weight: 500
+		margin-right: 18px
+		display: block
+	input::placeholder 
+		color: #D4D9E2
+.step:last-child 
+	border-bottom: none
+.button-row
+	display: flex 
+	justify-content: flex-end
+	padding-top: 80px
+	.submit-button 
+		width: 264px
+		height: 60px
+		background: #0E171F
+		border-radius: 5px
+		color: #fff
+		border: none 
+		outline: none
+		font-size: 18px
+@import "media"
+
+
+
+
